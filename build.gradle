@@ -5,3 +5,17 @@ plugins {
 sourceSets {
     main.java.srcDir("src")
 }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.h2database:h2:2.2.224'
+}
+
+dependencies {
+    implementation(// https://mvnrepository.com/artifact/com.h2database/h2
+            testImplementation group: 'com.h2database', name: 'h2', version: '2.2.224'
+    )
+}
